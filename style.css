@@ -6,9 +6,12 @@
     outline:none;
 }
 html, body{
-    height: 200%;
+    height: 100%;
     width:100%;
     background-color:black;
+}
+body{
+    overflow-x:hidden;
 }
 :root{
     --bg-color: #000000;
@@ -18,12 +21,16 @@ html, body{
 
 #main{
     width:100%;
+    color:var(--text-color);
 }
 .landing-page{
     width:100%;
     min-height:100vh;
     background-color:var(--bg-color);
     color:var(--text-color);
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
 }
 
 .header{
@@ -33,7 +40,9 @@ html, body{
     align-items:center;
     padding:2rem 3%;
     position:fixed;
+    top:0;
     width:100%;
+    background-color:var(--bg-color);
 }
 .header a{
     text-decoration:none;
@@ -69,7 +78,7 @@ section{
 #heading-designer h5{
     text-transform:uppercase;
     margin-top:0.25rem;
-    font-size:1rem;
+    font-size:0.92rem;
     font-weight: 500;
 }
 
@@ -78,16 +87,19 @@ section{
     flex-direction:row;
     justify-content: space-between;
     align-items:last baseline;
-    padding-top:6.5rem;
+    padding-bottom:0.5rem;
     padding-right:3%;
 }
-
 .landing-page-last-headings a{
     color:var(--text-color);
     text-decoration:none;
     text-transform:uppercase;
     font-size:0.92rem;
     font-weight:500;
+}
+.landing-page-last-headings i:hover{
+    cursor:pointer;
+    rotate:
 }
 #available-for-freelance{
     display:flex;
@@ -108,4 +120,128 @@ section{
     border-radius:50%;
     font-weight:900;
     font-size:0.92rem;
+}
+
+.second-page{
+    min-height:100vh;
+    width:90%;
+    /* background-color:lightskyblue; */
+    padding-top:11.4rem;
+    padding-left: 3%;
+    color:var(--snd-text-color);
+}
+
+#the-plug, #ixperience, #hudu{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+    border-top: 1px solid var(--snd-text-color);
+}
+#the-plug h1, #ixperience h1, #hudu h1{
+    font-size: 6.5rem;
+    font-weight:500;
+    text-transform: uppercase;
+    margin:3rem 0;
+    cursor:pointer;
+    transition: 1s ease;
+}
+#hudu{
+    border-bottom: 1px solid var(--snd-text-color);
+}
+#the-plug h5, #ixperience h5, #hudu h5{
+    font-size: 0.9rem;
+    font-weight:500;
+    color:var(--text-color);
+    transition: 1s ease;
+}
+#the-plug:hover h1, #ixperience:hover h1, #hudu:hover h1{
+    transform:translateX(3rem);
+    opacity:0.25;
+}
+#the-plug:hover h5, #ixperience:hover h5, #hudu:hover h5{
+    opacity:0.25;
+}
+
+#the-plug img, #ixperience img, #hudu img{
+    position:absolute;
+    height:40%;
+    z-index: 999;
+    display:none;
+    transition:display 0.5s ease;
+}
+
+.about{
+    min-height:100vh;
+    display:flex;
+    flex-direction:row;
+}
+.nothing-about{
+    width:38vw;
+    height:100vh;
+}
+.about-me{
+    width:62%;
+    color:var(--text-color);
+    height:100vh;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+}
+.about-para{
+    display:flex;
+    flex-direction:column;
+    align-items: start;
+}
+
+.about-para p{
+    /* text-align: justify; */
+    margin-left: 4rem;
+    margin-right:9rem;
+    line-height: 1.5;
+    font-weight:500;
+    color:var(--snd-text-color);
+}
+.about-para h4{
+    font-weight:500;
+    margin-left:4rem;
+    margin-bottom:1rem;
+    text-transform: uppercase;
+    color:var(--snd-text-color);
+    font-size: 0.9rem;
+}
+.about-para button{
+    margin-left: 4rem;
+    margin-top:1rem;
+    border:1px solid var(--text-color);
+    padding:0.3rem 1rem;
+    color:var(--text-color);
+    background-color: transparent;
+    border-radius:2rem;
+    font-weight:500;
+    font-size: 0.9rem;
+    cursor:pointer;
+}
+.about-me img{
+    height:33vh;  
+}
+
+.subscribe{
+    padding-left: 3%;
+}
+i{
+    cursor:pointer;
+}
+.subscribe h5{
+    text-transform:uppercase;
+    font-weight: 500;
+    color:var(--snd-text-color);
+    line-height:1.8;
+}
+.subscribe a{
+    text-decoration:none;
+    color:var(--text-color);
+    text-transform:uppercase;
+    font-weight: 500;
+    font-size:0.9rem;
 }
