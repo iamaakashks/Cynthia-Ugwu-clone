@@ -6,8 +6,9 @@
     outline:none;
 }
 html, body{
-    height: 100%;
+    height: 200%;
     width:100%;
+    background-color:black;
 }
 :root{
     --bg-color: #000000;
@@ -40,16 +41,16 @@ html, body{
     font-weight:600;
 }
 .header h4{
-    font-size:0.9rem;
+    font-size:0.92rem;
+    font-weight:500;
 }
 
 section{
-    min-width:100vh;
     padding-left:3%;
-    padding-top:11.4rem;
 }
 .heading{
     width:66.5%;
+    padding-top:11.4rem;
 }
 #heading-designer{
     display:flex;
@@ -65,9 +66,46 @@ section{
     line-height:1;
     margin-top:-1.3rem;
 }
-.heading h5{
+#heading-designer h5{
     text-transform:uppercase;
     margin-top:0.25rem;
-    font-size:0.9rem;
-    letter-spacing:1.05px;
+    font-size:1rem;
+    font-weight: 500;
+}
+
+.landing-page-last-headings{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items:last baseline;
+    padding-top:6.5rem;
+    padding-right:3%;
+}
+
+.landing-page-last-headings a{
+    color:var(--text-color);
+    text-decoration:none;
+    text-transform:uppercase;
+    font-size:0.92rem;
+    font-weight:500;
+}
+#available-for-freelance{
+    display:flex;
+    flex-direction:column;
+    align-items:end;
+    line-height:2;
+}
+#available-for-freelance p{
+    font-weight:500;
+    text-transform:uppercase;
+    font-size: 0.92rem;
+    letter-spacing: -0.2px;
+}
+#arrow-down i{
+    color:var(--bg-color);
+    background-color:var(--snd-text-color);
+    padding:0.3rem;
+    border-radius:50%;
+    font-weight:900;
+    font-size:0.92rem;
 }
