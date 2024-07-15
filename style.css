@@ -97,10 +97,6 @@ section{
     font-size:0.92rem;
     font-weight:500;
 }
-.landing-page-last-headings i:hover{
-    cursor:pointer;
-    rotate:
-}
 #available-for-freelance{
     display:flex;
     flex-direction:column;
@@ -166,7 +162,7 @@ section{
 #the-plug img, #ixperience img, #hudu img{
     position:absolute;
     height:40%;
-    z-index: 999;
+    z-index: 99;
     display:none;
     transition:display 0.5s ease;
 }
