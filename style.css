@@ -245,3 +245,36 @@ i{
     font-weight: 500;
     font-size:0.9rem;
 }
+
+.footer{
+    padding-top:10rem;
+    padding-bottom:1rem;
+    padding-left: 3%;
+    padding-right: 3%;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.time{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    gap:2rem;
+}
+.time h5{
+    font-size:0.95rem;
+    font-weight: 500;
+}
+.time span{
+    font-size:0.8rem;
+    margin-left:1px;
+}
+.connect a{
+    color:var(--text-color);
+    text-decoration:none;
+    text-transform: uppercase;
+    font-size:0.8rem;
+    font-weight: 500;
+    margin-left:2.5rem;
+}
